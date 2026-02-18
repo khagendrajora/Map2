@@ -1,0 +1,91 @@
+[
+  {
+    "label": "Route 1",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "mode": "drive",
+            "waypoints": [
+              {
+                "lat": 27.696354,
+                "lon": 85.336537
+              },
+              {
+                "lat": 27.696662677926415,
+                "lon": 85.33526643980764
+              }
+            ],
+            "legs": [
+              {
+                "distance": 150.5,
+                "time": 30
+              }
+            ]
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [85.336537, 27.696354],
+              [85.33526643980764, 27.696662677926415]
+            ]
+          }
+        }
+      ]
+    },
+    "distances": [
+      {
+        "from": 1,
+        "to": 2,
+        "distance": 150.5
+      }
+    ]
+  },
+  {
+    "label": "Route 2",
+    "response": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "mode": "drive",
+            "waypoints": [
+              {
+                "lat": 27.696865502368286,
+                "lon": 85.33607831974011
+              },
+              {
+                "lat": 27.696354,
+                "lon": 85.336537
+              }
+            ],
+            "legs": [
+              {
+                "distance": 200.3,
+                "time": 45
+              }
+            ]
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [85.33607831974011, 27.696865502368286],
+              [85.336537, 27.696354]
+            ]
+          }
+        }
+      ]
+    },
+    "distances": [
+      {
+        "from": 1,
+        "to": 2,
+        "distance": 200.3
+      }
+    ]
+  }
+]
+

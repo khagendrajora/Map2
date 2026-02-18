@@ -1,0 +1,199 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #f5f7fa;
+}
+
+.map-section {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.map-wrapper {
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+}
+
+.map-wrapper>div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.controls-panel {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #6a3d8f 100%);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #e67ee8 0%, #d94659 100%);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.data-section {
+    padding: 20px 16px;
+    background: white;
+    border-top: 1px solid #e0e0e0;
+}
+
+.data-section h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.table-wrapper {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table-wrapper thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.table-wrapper th {
+    padding: 14px 12px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.table-wrapper tbody tr {
+    border-bottom: 1px solid #e8eef5;
+    transition: background-color 0.2s ease;
+}
+
+.table-wrapper tbody tr:hover {
+    background-color: #f8f9fc;
+}
+
+.table-wrapper tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table-wrapper td {
+    padding: 12px;
+    text-align: center;
+    color: #333;
+}
+
+.table-wrapper td:first-child {
+    color: #667eea;
+    font-weight: 500;
+}
+
+.distance-value {
+    font-weight: 600;
+    color: #764ba2;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .map-section {
+        flex-direction: column;
+    }
+
+    .controls-panel {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .button-group {
+        flex-direction: row;
+    }
+}
+
+/* Scrollbar styling */
+.table-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
